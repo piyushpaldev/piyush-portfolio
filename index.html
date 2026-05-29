@@ -11,6 +11,15 @@
       padding:0;
       box-sizing:border-box;
       scroll-behavior:smooth;
+      .profile-pic{
+    width:220px;
+    height:220px;
+    border-radius:50%;
+    object-fit:cover;
+    border:4px solid cyan;
+    display:block;
+    margin:0 auto 25px auto;
+}
     }
 
     body{
@@ -112,7 +121,21 @@
       transform:scale(1.1);
       background:white;
     }
+.yt-btn{
+  display:inline-block;
+  margin-top:20px;
+  padding:12px 24px;
+  background:red;
+  color:white;
+  text-decoration:none;
+  border-radius:30px;
+  font-weight:bold;
+  transition:0.3s;
+}
 
+.yt-btn:hover{
+  transform:scale(1.1);
+}
     section{
       padding:80px 10%;
     }
@@ -204,7 +227,9 @@
         gap:15px;
       }
     }
-  </style>
+  
+</style>
+
 </head>
 <body>
 
@@ -214,14 +239,18 @@
     <ul>
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
   <section class="hero">
+    <img src="./myphoto.jpeg.jpeg" alt="Piyush" class="profile-pic">
     <h2>Hello, I'm Piyush Pal</h2>
     <p>Future IT Professional • Web Developer • YouTuber</p>
-
+<a href="https://www.youtube.com/channel/UC2ZeIwXpFeBO0GCcAd9OPNQ" target="_blank" class="yt-btn">
+Visit My YouTube
+</a>
     <button class="btn" onclick="showMessage()">
       Hire Me
     </button>
@@ -232,11 +261,35 @@
 
     <div class="about-box">
       <p>
-        I am an aspiring IT professional, web developer, content creator and video editor. I am currently learning web development and improving my coding skills every day with real projects. I create mystery, historical and knowledge based YouTube content and also design thumbnails and edit videos professionally. I am passionate about technology, creativity and building modern websites.
-      </p>
+I am an aspiring IT professional, web developer, content creator and video editor.
+I love creating modern websites and learning new technologies.
+I also run a YouTube channel called Bharat Decode where I create mystery and knowledge-based content.
+</p>
     </div>
   </section>
+<section id="projects">
 
+  <h2 class="title">Projects</h2>
+
+  <div class="skills-container">
+
+    <div class="skill-card">
+      <h3>Calculator App</h3>
+
+      <p>
+        A modern calculator built using HTML, CSS and JavaScript.
+      </p>
+
+      <br>
+
+      <a href="calculator.html" class="yt-btn">
+        Open Project
+      </a>
+    </div>
+
+  </div>
+
+</section>
   <section id="skills">
     <h2 class="title">My Skills</h2>
 
@@ -271,7 +324,37 @@
         <h3>YouTube SEO</h3>
         <p>Growth and content optimization.</p>
       </div>
+<div class="skill-card">
+  <h3>HTML</h3>
 
+  <div class="bar">
+    <span style="width:90%"></span>
+  </div>
+</div>
+
+<div class="skill-card">
+  <h3>CSS</h3>
+
+  <div class="bar">
+    <span style="width:80%"></span>
+  </div>
+</div>
+
+<div class="skill-card">
+  <h3>JavaScript</h3>
+
+  <div class="bar">
+    <span style="width:50%"></span>
+  </div>
+</div>
+
+<div class="skill-card">
+  <h3>Web Design</h3>
+
+  <div class="bar">
+    <span style="width:75%"></span>
+  </div>
+</div>
     </div>
   </section>
 
